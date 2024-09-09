@@ -1,0 +1,106 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+/* styles.css */
+.body-container {
+    padding: 10px;
+}
+
+.button-note {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.textarea-note {
+    width: 100%;
+    height: 1.5em; /* Single-line height */
+    resize: none;  /* Disable resizing */
+    margin-top: 10px;
+}
+
+/* Media Window */
+.media-window {
+    width: 400px;
+    height: 60%;
+    padding: 15px;
+    background-color: #2b2b2b; /* A darker background to match Obsidian's dark mode */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    border: 1px solid #444; /* Subtle border to blend in */
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: "Segoe UI", Arial, sans-serif; /* A more modern font */
+    font-size: 14px; /* Slightly smaller text for better readability */
+    color: #ccc; /* Lighter text color for contrast */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+    transition: box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.media-window:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
+}
+
+.text-content {
+    padding: 15px;
+    line-height: 1.6;
+    color: #d3d3d3; /* Lighter text color */
+    border-left: 3px solid #3a3a3a; /* Adds a left border for text separation */
+}
+
+.text-content div {
+    margin-bottom: 15px; /* Space between each note */
+    padding: 10px;
+    background-color: #3a3a3a; /* Subtle background for individual notes */
+    border-radius: 6px; /* Rounded corners for each note */
+}
+
+.text-content div:hover {
+    background-color: #4a4a4a; /* Slightly lighter background on hover */
+    border-left-color: #5865F2; /* Change border color on hover to accent */
+}
+
+.text-content div .note-title {
+    font-weight: bold;
+    color: #ffffff; /* White for note titles */
+}
+
+.text-content div .note-details {
+    font-size: 12px;
+    color: #bbbbbb; /* Light grey for note details */
+}
+
+/* Tag Settings */  
+.tags-container {
+    max-height: 150px; /* Set max height for the scrollable area */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column; /* Stack tags vertically */
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2b2b2b;
+}
+
+.tag-item {
+    display: flex; /* Make the tag item and its remove button sit next to each other */
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #2b2b2b;
+    margin-bottom: 5px; /* Space between tags */
+    border-radius: 3px;
+}
+
+.tag-remove {
+    margin-left: 10px;
+    background-color: rgb(230, 204, 204);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+{
+	"id": "review_tracker",
+	"name": "Review Tracker",
+	"version": "0.9.0",
+	"minAppVersion": "0.15.0",
+	"description": "Provides notes-to-review tracking, with ntoes pulled from your vault's header files.",
+	"author": "Obsidian",
+	"authorUrl": "https://github.com/ThomasChambers15243",
+	"fundingUrl": "https://buymeacoffee.com/tomchambers",
+	"isDesktopOnly": false
+}
