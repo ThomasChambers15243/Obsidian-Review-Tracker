@@ -136,14 +136,13 @@ async function Sync(noteWindow: HTMLDivElement, isReview=false) {
           },
           function(error) {
               console.log(`No headers in file: ${file.path}. Error: ${error}`);
+              return;
           },
       );                        
-  }
-                      
+  }                      
   if (await SyncNotes(headerNames)) {
-    // Update Text
-
     let notesMarkdown = await GetAllNotesAsText();
+    if (notesMarkdown == "") {return;}
   
     noteWindow.empty();
       
